@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+    <br>
+    <div>
+        <input type="text" id="filter-data" placeholder="filter data"/>
+    </div>
+
+    <br>
+    <p id="errmsg" hidden>Please enter details</p>
+    <p id="errmsg2" hidden>Name already exist</p>
+    
+    <div id="clearDiv">
+    </div>
+    <section id="inputs">
+
+        <input type="text" id="name" placeholder="name">
+        <!-- <input type="number" id="basic-salary" placeholder="basic salary"> -->
+        <input type="number" id="overtime" placeholder="overtime">
+        <input type="text" id="job" placeholder="job">
+        <input type="text" id="id" hidden>
+
+        <button type="button" id="addBtn">ADD</button>
+        <button type="button" id="updateBtn" hidden>UPDATE</button>
+        <button type="button" id="clearBtn">CLEAR</button>
+    </section>
+
+    <section id="table-section">
+        <p id="total-salary">TOTAL BUDGET: ₱0</p> 
+        <p id="total-employees">Total Employees: 0</p> <BR>
+        <div id="confirm-update"></div>
+        <table>
+            <thead>
+                <tr>
+                    <Th>NAME</Th>
+                    <th>DAILY RATE</th>
+                    <th>SALARY</th>
+                    <th>OVERTIME (₱52.5/hr)</th>
+                    <th>JOB</th>
+                    <th>UPDATE</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </section>
+    <script src="index.js"></script>
+
+</body>
+</html>
